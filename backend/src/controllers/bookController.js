@@ -21,3 +21,23 @@ export const createBook = async (req, res) => {
     }
 };
 
+export const getAllBooks = async (req, res) => {
+    try {
+        const books = await prisma.book.findMany();
+        return res.status(200).json(books);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ error: "Internal server error" });
+    }
+}
+
+export const getBookByID = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const book = await prisma.book.findUnique({ where: { id: parseInt(id) } });
+        return res.status(200).json(book);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ error: "Internal server error" });
+    }
+}
