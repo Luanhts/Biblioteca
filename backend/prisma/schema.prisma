@@ -17,9 +17,9 @@ model Book {
 
 model User {
   id    Int    @id @default(autoincrement())
-  nome  String
+  name  String
   email String @unique
-  senha String
+  password String
   rents Rent[]
 }
 
