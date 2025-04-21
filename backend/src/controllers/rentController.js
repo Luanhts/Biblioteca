@@ -1,4 +1,4 @@
-import prisma from "../prismaClient";
+import prisma from "../prismaClient.js";
 export const createRent = async (req, res) => {
     try {
         const { userId, bookId } = req.body;
