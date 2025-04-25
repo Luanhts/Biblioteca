@@ -1,0 +1,4 @@
+[] Arrumar o React Route
+[] Ajustar a SideBar e seus elementos 
+[] Deixar o Estilo mais bonito 
+[] Adicionar o elemento category ao mmodel 
