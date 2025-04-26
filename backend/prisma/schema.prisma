@@ -11,6 +11,7 @@ model Book {
   id     Int    @id @default(autoincrement())
   title  String
   author String
+  category String?
   year   Int
   rents  Rent[]
 }
