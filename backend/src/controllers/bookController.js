@@ -2,7 +2,7 @@ import prisma from "../prismaClient.js"
 
 export const createBook = async (req, res) => {
     try {
-        const { title, author, year } = req.body;
+        const { title, author, year, category } = req.body;
 
         const bookExists = await prisma.book.findFirst({ where: { title } });
 
@@ -11,7 +11,7 @@ export const createBook = async (req, res) => {
         }
 
         const newBook = await prisma.book.create({
-            data: { title, author, year },
+            data: { title, author, year, category },
         });
 
         return res.status(201).json(newBook);

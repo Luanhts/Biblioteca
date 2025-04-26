@@ -14,6 +14,10 @@ export default function App() {
       .catch(err => console.error(err));
   }, []);
 
+  const handleDeleteBook = (id: number) => {
+    setBooks(books.filter(book => book.id !== id));
+  };
+
   return (
     <div className="flex h-screen">
       <Sidebar />
@@ -21,7 +25,7 @@ export default function App() {
         <Header />
         <main className="flex-1 p-6 bg-gray-50">
           <BookForm setBooks={setBooks} />
-          <BookTable books={books} />
+          <BookTable books={books} onDelete={handleDeleteBook}/>
         </main>
       </div>
     </div>

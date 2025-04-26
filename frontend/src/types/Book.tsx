@@ -1,7 +1,7 @@
 export type Book = {
-  id?: number;
+  id: number;
   title: string;
   author: string;
-  category?: string;
+  category: string;
   year: number;
 };

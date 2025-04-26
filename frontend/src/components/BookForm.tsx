@@ -13,6 +13,7 @@ export function BookForm({ setBooks }: Props) {
     const book: Omit<Book, 'id'> = {
       title: (form[0] as HTMLInputElement).value,
       author: (form[1] as HTMLInputElement).value,
+      category: (form[2] as HTMLInputElement).value,
       year: Number((form[3] as HTMLInputElement).value),
     };
 
@@ -24,7 +25,6 @@ export function BookForm({ setBooks }: Props) {
       })
       .catch((err) => console.error("Erro ao salvar livro:", err));
   };
-
   return (
     <form onSubmit={handleSaveBook} className="grid grid-cols-2 gap-4 bg-white p-4 rounded shadow mb-6">
       <input type="text" placeholder="Title" className="border p-2 rounded" required />
