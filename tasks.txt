@@ -1,6 +1,6 @@
 [] Arrumar o React Route
 [X] Ajustar a SideBar e seus elementos 
 [] Deixar o Estilo mais bonito 
-[] Adicionar o elemento category ao mmodel 
+[X] Adicionar o elemento category ao mmodel 
 [] Acrescentar funcionalidade de editar 
 [] Acrescentar funcionalidade de Listar
