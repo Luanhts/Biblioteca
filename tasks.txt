@@ -3,4 +3,4 @@
 [] Deixar o Estilo mais bonito 
 [X] Adicionar o elemento category ao mmodel 
 [] Acrescentar funcionalidade de editar 
-[] Acrescentar funcionalidade de Listar
+[X] Acrescentar funcionalidade de Listar

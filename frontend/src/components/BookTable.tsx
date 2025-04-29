@@ -1,3 +1,4 @@
+
 import { Book } from "../types/Book";
 import axios from "axios";
 type Props = {
@@ -5,7 +6,8 @@ type Props = {
   onDelete: (id: number) => void;
 };
 
-export function BookTable({ books, onDelete }: Props) {
+export function BookTable({books, onDelete }: Props) {
+
   const handleDeleteBook = async (id: number) => {
     try {
       await axios
@@ -19,6 +21,7 @@ export function BookTable({ books, onDelete }: Props) {
       
       
   };
+  
 
   return (
     <div className="bg-white shadow rounded p-4">
