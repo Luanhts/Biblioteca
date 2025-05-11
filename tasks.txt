@@ -3,11 +3,7 @@
 [] Deixar o Estilo mais bonito 
 [X] Adicionar o elemento category ao mmodel 
 [] Acrescentar funcionalidade de editar 
-<<<<<<< HEAD
 [X] Acrescentar funcionalidade de Listar
+[X] Acrescentar funcionalidade de Deletar
 [X] Acrescentar funcionalidade de Listar
-=======
-[] Acrescentar funcionalidade de Listar
-[] Acrescentar funcionalidade de Deletar
 [] Ajustar botões e outras funcionalidades
->>>>>>> 5543e6a8f0e2fc9c77b86a2082bf2565e38b8685
