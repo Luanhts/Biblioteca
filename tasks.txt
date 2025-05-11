@@ -4,3 +4,4 @@
 [X] Adicionar o elemento category ao mmodel 
 [] Acrescentar funcionalidade de editar 
 [X] Acrescentar funcionalidade de Listar
+[X] Acrescentar funcionalidade de Listar
