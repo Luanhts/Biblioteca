@@ -1,3 +1,5 @@
 {
-  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"]
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/eead4ca3-1c9c-4af2-a642-5860e697ab48/resourceGroups/biblioteca-app_group-b5e2/providers/Microsoft.Web/sites/biblioteca-app",
+  "appService.deploySubpath": "backend"
 }
