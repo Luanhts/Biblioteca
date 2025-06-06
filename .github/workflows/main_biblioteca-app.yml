@@ -27,9 +27,10 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
-      - name: Zip artifact for deployment
-        run: zip -r release.zip backend
-
+      - name: Zip contents of backend directly
+        run: |
+          cd backend
+          zip -r ../release.zip .
 
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
@@ -69,5 +70,4 @@ jobs:
         with:
           app-name: 'biblioteca-app'
           slot-name: 'Production'
-          package: backend/.
-
+          package: release.zip
