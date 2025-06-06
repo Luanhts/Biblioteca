@@ -27,10 +27,10 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
-      - name: Zip contents of backend directly
+      - name: Zip backend contents (flattened)
         run: |
           cd backend
-          zip -r ../release.zip .
+          zip -r ../release.zip * .[!.]*
 
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
